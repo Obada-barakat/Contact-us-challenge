@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Obada-barakat/Contact-us-challenge)
+- Live Site URL: [Add live site URL here](https://obada-barakat.github.io/Contact-us-challenge/)
 
 ## My process
 
@@ -62,7 +62,7 @@ In the future, I plan to learn Node.js to deepen my understanding of how to hand
 
 - [Example resource 1](https://peerdh.com/blogs/programming-insights/creating-custom-error-messages-for-form-validation-in-javascript) - This really gave a great idea about error messages, how to write and design them, to provide a clarity, reduce frustration.
 
-- [Example resource 2](without any link it's always Stack Overflow)
+- (without any link it's always Stack Overflow)
 
 ## Author
 
