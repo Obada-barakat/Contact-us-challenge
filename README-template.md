@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Obada-barakat/Contact-us-challenge)
-- Live Site URL: [Add live site URL here](https://obada-barakat.github.io/Contact-us-challenge/)
+- Solution URL: [Contact us Repo](https://github.com/Obada-barakat/Contact-us-challenge)
+- Live Site URL: [Contact Us](https://obada-barakat.github.io/Contact-us-challenge/)
 
 ## My process
 
