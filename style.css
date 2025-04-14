@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+    font-family: "Karla", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: hsl(148, 38%, 91%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_us_container {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 550px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.contact_us_container .title {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+#my_form .label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: hsl(187, 24%, 22%);
+}
+
+#my_form > div:not(:last-of-type) {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+#my_form .user_name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+@media (max-width: 540px) {
+        #my_form .user_name div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 540px) {
+    #my_form .user_name div {
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+#my_form input:not(input[type='radio'], input[type='checkbox']) {
+    height: 40px;
+    width: 100%;
+    padding: 0 15px;
+    outline: none;
+    border: 2px solid #c0c0c0;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+#my_form input:not(input[type='radio'], input[type='checkbox']):hover {
+    background-color: hsl(144.71deg 37.78% 96%);
+    cursor: pointer;
+}
+
+#my_form input:not(input[type='radio'], input[type='checkbox']):focus {
+    border-color: hsl(169, 82%, 37%);
+}
+
+#my_form .query_type div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#my_form .query_type label{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    position: relative;
+    border: 2px solid #c0c0c0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+#my_form .query_type label input[type='radio'] {
+    position: absolute;
+    opacity: 0;
+}
+
+#my_form .query_type label .custom-radio {
+    width: 18px;
+    height: 18px;
+    border: 2px solid hsl(169, 82%, 27%);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}
+
+#my_form .query_type label .custom-radio::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: hsl(169, 82%, 27%);
+    border-radius: 50%;
+    margin: 0;
+    transform: scale(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+#my_form .query_type label:hover {
+    cursor: pointer;
+    border-color: hsl(169, 82%, 27%);
+}
+
+#my_form .query_type label input[type='radio']:checked + .custom-radio::after {
+    transform: scale(1);
+}
+
+#my_form .query_type label:has(input[type='radio']:checked) {
+    border-color: hsl(169, 82%, 27%);
+    background-color: hsl(144.71deg 37.78% 96%);
+
+}
+
+@media (min-width: 540px) {
+    #my_form .query_type label {
+        width: calc(100% / 2 - 10px)
+    }
+}
+
+#my_form textarea {
+    width: 100%;
+    border: 2px solid #c0c0c0;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+#my_form button[type= 'submit'] {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#my_form div:has(> input[type='checkbox']) {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 12px;
+    align-items: center;
+}
+
+#my_form input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    width: 1em;
+    height: 1em;
+    border: 0.10em solid #c0c0c0;
+    padding: 0;
+    border-radius: 0.10em;
+    display: grid;
+    place-content: center;
+    cursor: pointer
+}
+
+#my_form input[type="checkbox"]::before {
+    display: grid;
+    place-content: center;
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;
+    width: 1em;
+    height: 1em;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    outline: none;
+    border-radius: inherit;
+    transform: scale(0) rotate(90deg);
+    transition: transform 0.4s ease-in-out;
+}
+
+#my_form input[type="checkbox"]:checked::before {
+    transform: scale(1) rotate(0deg);
+}
+
+#my_form input[type="checkbox"] ~ label {
+    font-size: 1.10em;
+}
+
+#my_form div:has(> input[type='checkbox']) span {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.mandatory {
+    color: red;
+}
+
+input {
+    border: 1px solid;
+}
+
+input:focus {
+    outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    
+}
+
+.input_error {
+    border-color: hsl(0, 66%, 54%);
+}
+
+#message {
+    resize: none;
+}
+
+#message:focus {
+    outline: none;
+}
+
+#successful {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: hsla(189, 24%, 22%, 0.71);;
+    color: hsl(0, 0%, 100%);
+    width: 40%;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: center;
+    transition: width 0.2s linear 0.1s, top 0.4s ease-in-out;
+
+}
+
+@media (max-width: 540px) {
+    #successful {
+        width: 100%;
+    }
+}
+
+#successful.show {
+    top: 10px;
+}
+
+/* #successful.desktop {
+    top: 10px;
+} */
+
+#successful i {
+    margin-right: 8px;
+}
+
+#successful p {
+    display: block;
+    font-size: 14px;
+    margin: 6px 0;
+}
